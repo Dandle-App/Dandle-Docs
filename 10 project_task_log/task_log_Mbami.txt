@@ -1,0 +1,340 @@
+
+Meeting outline Sep 6th 2021
+
+Discuss sprint_0 tasks
+	o Choosing roles for sprint 0
+	o Agree on first feature to implement = patient barcode sign-in
+
+
+Do our standups
+	[Mbami's standup]
+	o Last time
+		- Agreed on toolchain & stack = MERN stack, Docker, Redis
+		- Installed all tools & dependencies
+		- Attended meeting to make sure my setup was okay
+		- We helped each other get setup over Teams meeting
+		- Made a setup checklist doc. for the Team
+	o Now doing
+		- Sign-in frontend feature (TBD)
+		- frontend dev (TBD)
+		- Looking into the React Native barcode scanner package
+	o Roadblocks
+		- figuring if state management of the app should be with redux
+=======================================================================================
+
+Meeting outline Sep 9th 2021
+
+Discuss UserFlow design
+	o Explain my approach
+	o Alternatives if any
+
+
+Do our standups
+	[Mbami's standup]
+	o Last time
+		- Sign-in frontend feature - for user, staff, org
+		- Looking into bar-code-scanner package; stability, and implementationS
+		- Met with Naji to clarify some backend-frontend relation + database
+		- Started the Welcome.js screen/component, and styles.js
+		- Made a video tutorial
+	o Now doing
+		- Still on Sign-in frontend feature - for user, staff, org
+		- Wireframe and user-flow diagram
+		- frontend dev (TBD)
+		- Looking into the React Native barcode scanner package
+	o Roadblocks
+		- figuring out how state-mngt will work with our app, using redux
+		- deciding on color palette, logo
+
+
+=======================================================================================
+
+Meeting outline Sep 15th 2021
+
+PRE-STANDUP
+	o Discuss Assigning roles design
+		- Discuss choosing tasks on Jira board, and assigning
+		- Re-emphasize on the duties of each role, especially Scrum master
+		  and Product Owner
+
+
+STANDUPS
+	[Mbami's standup]
+	o Last time
+		- Welcome.js, UserSignIn.js, react-native-swiper
+		- Making a how it brief works animation, will be on Welcome.js
+		- Styling some screens that weren't styled yet
+		- Decided on color palette, and made our logo.
+
+	o Now doing
+		- Working on StackNavigator, which link screens together, eventHandlers
+		- Exploring TabNavigator
+		- Will begin working on axios for REST API communication
+
+	o Roadblocks
+		- 2 interviews this week, one down and one to go
+
+=======================================================================================
+
+Meeting outline Sep 15th 2021
+
+PRE-STANDUP
+	o Discuss Assigning roles design
+		- Discuss choosing tasks on Jira board, and assigning
+		- Re-emphasize on the duties of each role, especially Scrum master
+		  and Product Owner
+
+
+STANDUPS
+	[Mbami's standup]
+	o Last time
+		- Welcome.js, UserSignIn.js, react-native-swiper
+		- Making a how it brief works animation, will be on Welcome.js
+		- Styling some screens that weren't styled yet
+		- Decided on color palette, and made our logo.
+
+	o Now doing
+		- Working on StackNavigator, which link screens together, eventHandlers
+		- Exploring TabNavigator
+		- Will begin working on axios for REST API communication
+
+	o Roadblocks
+		- 2 interviews this week, one down and one to go
+=======================================================================================
+Meeting outline Sep 20th 2021
+
+PRE-STANDUP
+	o Briefly discuss Sprint01, Demo day
+
+STANDUPS
+	[Mbami's standup]
+	o Last time
+		- Added stackNavigator, we can now move between screens
+		- Completed the how it works animation, and added to welcome page
+		- Styling some screens that weren't styled yet
+
+	o Now doing
+		- My last task for the sprint - UserSignUp.js
+		- Code review + documentation
+		- Get ready for Demo day: contribute to google slide
+
+	o Roadblocks
+		- None
+
+=======================================================================================
+
+Meeting outline Sep 27th 2021
+
+	o SwaggerHub API; make contribution + give feedback + show on scrn
+	o Jira taks updated + more to be added (show board)
+	o Introduce Redux + toolkit + see what others' approach will be
+	o I'll share vid about Redux by Tues + all frontend need to watch it
+
+NO STANDUPS
+	[Mbami's standup]
+	o Last time
+		- N/A
+		- N/A
+		- N/A
+
+	o Now doing
+		- N/A
+		- N/A
+		- N/A
+
+	o Roadblocks
+		- N/A
+
+=======================================================================================
+Meeting outline Sep 29th 2021
+
+PRE-STANDUP
+	o Remind group to choose what task they want
+	o Willem's
+	o Questions, Feedback, Concerns, Bugs, etc
+
+STANDUP
+	o Last time
+		- Meeting discussing Sprint 02, getting Jira + new sprint branch set
+		- create tickets on Jira
+		- Create & add TextLink atom component to OrgSignUp and Welcome screen 
+		- SwaggerHub specifying routes for organization and staff
+		- Fixed bug: video reducing music volume, keyboard covering input
+		- dummy handleSubmit function for StaffSignUp
+
+
+	o Now doing
+		- Mapping out features that'll need to be in global store + 
+		  folder structure
+		- hooks for StaffSignUp handleSubmit 
+		- 
+	o Roadblocks
+		- Midterms + OA
+
+
+=======================================================================================
+
+Meeting outline Oct 4th 2021
+
+PRE-STANDUP
+	o Draw attention to new tasks added to Jira
+	o Choose a task you want to work on now till next time
+	o Draw attention to updated OrgMain.js - I need contributions and feedback
+	  on this, and any potential missing items/features
+	o Questions, Feedback, Concerns, Bugs, new ideas, etc
+		- what were the icons on OrgMain were supposed to rep?
+			+ Im thinking of just making it icons for TODO,
+			  In-prog, and done. Issue is; I don't know what
+			  Todo or in-prog icon to use, that's universal
+
+STANDUP
+	o Last time
+		- Mapping out features that'll need to be in global store + 
+		  folder structure
+		- hooks for StaffSignUp handleSubmit 
+		- Bug fixes
+		- Discussed diff approaches to persistent login
+		- Discussion on JWT and storing it safely
+
+	o Now doing
+		- Bridging gap btw KeyChain package + asyncStorage
+		- Wait for User-state design -> create User.js  and userSlice.js
+		- Design for OrgMain - still re-iterating over this
+		- Implement StaffSignIn behavior based off res
+			+display MsgBox with err if 'failed'
+			+store token using KeyChain if success
+			+nav to OrgMain if 'success'
+	o Roadblocks
+		- None
+
+
+=======================================================================================
+
+Meeting outline Oct 13th 2021
+
+PRE-STANDUP
+	o Draw attention to new tasks added to Jira
+	o Choose a task you want to work on now till next time
+	o Draw attention to updated OrgMain.js - I need contributions and feedback
+	  on this, and any potential missing items/features
+	o Questions, Feedback, Concerns, Bugs, new ideas, etc
+		- what were the icons on OrgMain were supposed to rep?
+			+ 
+
+STANDUP
+	o Last time
+		- Created a features folder > user folder > User.js and userSlice.js
+		- hook for StaffSignIn password visibilty
+		- Created storeToken, getToken, checkToken, and deleteToken func.
+		- Discussed diff approaches to persistent login
+		- Discussion on JWT and storing it safely
+
+	o Now doing
+		- Created a features folder > user folder > User.js and userSlice.js
+		- hook for StaffSignIn password toggle visibilty
+		- Created storeToken, getToken, checkToken, and deleteToken func.
+		  (not yet tested those at all)
+		- Reported sprint goal suggestion to Scrum lead.
+	o Roadblocks
+		- None
+
+
+=======================================================================================
+
+Meeting outline Oct 18th 2021
+ PRE-SU
+	o Frontend we should have a meeting to catchup and discuss redux concepts
+	  I've implemented for the User
+	o Inform of User.js and UserSlice.js additions (possibly show it)
+	o Figure out who's making OrgHome
+	o I'll share vid about Redux by Tues + all frontend need to watch it
+
+ STANDUPS
+	[Mbami's standup]
+	o Last time
+		- Completed toggle password visibility for all screens
+		- Wrote code for the userSlice.js and User.js; includes initState object, reducers, and actions
+		- Exported and added userSlice's reducers to the redux store, User info
+		  and tokens can be accessible to all other components
+		- Worked on Keychain storing token + refresh token
+
+	o Now doing
+		- Finishing userSlice.js and User.js
+		- Work on retrieving token & refresh token
+		  from storage and updating redux store
+		- getToken function that checks for token and dispatches action
+		  to store, set
+		- 
+
+	o Roadblocks
+		- None for now
+
+=======================================================================================
+
+Meeting outline Sep 15th 2021
+
+PRE-STANDUP
+	o Discuss Assigning roles design
+		- Discuss how token
+		- Re-emphasize on the duties of each role, especially Scrum master
+		  and Product Owner
+
+
+STANDUPS
+	[Mbami's standup]
+	o Last time
+		- Finished userSlice.js and User.js
+		- Worked on checkToken() => 90% done, just have to dispatch 
+		  an ction with the token as payload to the store.
+		- Wrote AppLoading logic, which calls checkToken while app loads
+		- Wrapped Provider around <App/> + passed store to provider, which took
+		  up most of my hours because of crash. But I was able to get around
+		- added the storeToken func into staffSignIn promise
+
+	o Now doing
+		- Work on checkToken func, which sends a GET req to backend, to request
+		  for new token when current one is expired
+		- E
+		- W
+
+	o Roadblocks
+		- 0
+
+=======================================================================================
+
+-- TODO --
+react native toast package
+
+- Make button as class/dynamic
+
++ Calendar input
+
++ Phone number format - country and spacing
+npm i react-native-phone-number-input --save
+
+FIRST NAME LAST NAME VS FULL NAME
+https://blog.prototypr.io/full-name-vs-first-last-name-ux-best-practice-8c2db7178fd1
+
+
+
+--- BUGS ---
++ StyledButton not spelled correcly
++ Capcha spelt incorrectly
++ confirm password spelt incorrectly on OrgSignUp.js
+
+--- NOTES ---
+Storage of sessions should be with react-native-keychain, not asyncStorage.
+For encryption purpose
+
+-- QUESTIONS --
++ Do we lookup username and email, or just email? for staff signin
+
+One case we need DOB from the staff, or user => If a user orders maybe alcohol, then
+the staff need to have info on their DOB. If a nurse user wants a certain medication
+staff might need DOB to get the right dosage or stuff like that.
+
++ Will redis session terminate after the app is closed? We dont want that because
+user should be able open the app and re-signin.
+
+
+
